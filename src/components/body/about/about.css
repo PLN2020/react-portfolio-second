@@ -1,0 +1,28 @@
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.about {
+    display: flex;
+    /* background: url("images/banner.jpg") no-repeat center; */
+    background: grey;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+}
+
+.about .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.about .about-content .about-text-1 {
+    font-size: 32px;
+}
+
+.about .about-content .about-text-2 {
+    font-size: 72px;
+    font-weight: 600;
+    margin: -3px;
+}

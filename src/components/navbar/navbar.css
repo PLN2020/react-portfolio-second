@@ -5,7 +5,7 @@
     text-decoration: none;
 }
 
-.nav-width {
+.max-width {
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
@@ -18,7 +18,7 @@
     padding: 15px 0;
 }
 
-.navbar .nav-width {
+.navbar .max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;

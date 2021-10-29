@@ -4,7 +4,7 @@ import './navbar.css'
 function Navbar() {
     return (
         <div className="navbar">
-            <div className="nav-width">
+            <div className="max-width">
                 <div className="logo"><a href="#">Portfo<span>lio.</span></a></div>
                 <ul className="menu">
                     <li><a href="#">About</a></li>
