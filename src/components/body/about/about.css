@@ -6,8 +6,9 @@
 
 .about {
     display: flex;
-    /* background: url("images/banner.jpg") no-repeat center; */
-    background: grey;
+    background: url("../../../images/background1.jpg") no-repeat center;
+    background-size: cover;
+    /* background: grey; */
     height: 100vh;
     color: white;
     min-height: 500px;
