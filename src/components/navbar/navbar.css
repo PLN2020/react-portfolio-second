@@ -12,10 +12,15 @@
 }
 
 .navbar {
-    background: indigo;
+    /* background: indigo; */
     position: fixed;
     width: 100%;
-    padding: 15px 0;
+    padding: 18px 0;
+    transition: 0.6s ease;
+}
+
+.navbar.active {
+    background: #fff;
 }
 
 .navbar .max-width {
@@ -28,6 +33,20 @@
     color: #fff;
     font-size: 35px;
     font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar.active .logo a {
+    color: indigo;
+    transition: opacity 0.3s ease;
+}
+
+.navbar .logo a:hover {
+    color: indigo;
+}
+
+.navbar.active .logo a:hover {
+    opacity: 40%;
 }
 
 .navbar .menu li {
@@ -40,4 +59,19 @@
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar.active .menu li a {
+    color: indigo;
+    transition: opacity 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    color: indigo;
+}
+
+.navbar.active .menu li a:hover {
+    color: indigo;
+    opacity: 40%;
 }

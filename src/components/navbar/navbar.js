@@ -1,11 +1,24 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './navbar.css'
 
 function Navbar() {
+    const [navbar,setNavbar] = useState(false);
+
+    const changeBackground = () => {
+        // console.log(window.scrollY);
+        if(window.scrollY >= 200) {
+            setNavbar(true);
+        } else {
+            setNavbar(false);
+        }
+    };
+
+    window.addEventListener('scroll', changeBackground);
+
     return (
-        <div className="navbar">
+        <div className={navbar ? 'navbar active' : 'navbar'}>
             <div className="max-width">
-                <div className="logo"><a href="#">Portfo<span>lio.</span></a></div>
+                <div className="logo"><a href="#">Port<span>folio.</span></a></div>
                 <ul className="menu">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Projects</a></li>
