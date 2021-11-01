@@ -1,30 +1,42 @@
 import React from 'react'
+import { ProjectData } from '../../../data/project-data'
 import "./projects.css"
 
-function Projects() {
+function Projects({ project }) {
+
+    const data = ProjectData;
+
     return (
         <div className="projects">
-            <div className="container">
-                <div className="row">
-                    <div className="image">
-                        <img src="https://res.cloudinary.com/ditoikfqn/image/upload/v1635653538/my-react-portfolio/portfolio-website.png" alt=""/>
-                        <div className="details">
-                            <h2>Card <span>Title</span></h2>
-                            <p>Paragraph Text, Using the Hello World guide, you’ll create a repository, start a branch, write comments, and open a pull request.</p>
-                            <div className="card-footer">
-                                <a href="" className="source-code">Source <span>Code</span></a> 
-                                <div className="icons">
-                                    <i class="devicon-react-original-wordmark colored"></i>
-                                    <i class="devicon-html5-plain-wordmark colored"></i>
-                                    <i class="devicon-css3-plain-wordmark colored"></i>
-                                    <i class="devicon-javascript-plain colored"></i>
-                                    <i class="devicon-firebase-plain-wordmark colored"></i>
+            <div>
+                {data.map((project)=> {
+                    return (
+                        <div className="container">
+                            <div className="row">
+                                <div className="image">
+                                    <img src={project.image} alt=""/>
+                                    <div className="details">
+                                        <h2>{project.title}</h2>
+                                        <p>{project.details}</p>
+                                        <div className="card-footer">
+                                            <div className="links">
+                                                <a href={project.github} className="source-code" target="_blank">Source / </a> 
+                                                <a href={project.url} className="website-url" target="_blank">URL</a> 
+                                            </div>
+                                            
+                                            <div className="icons">
+                                                {project.icons.map((icon) => {
+                                                    return icon
+                                                })}
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>            
+                        </div> 
+                    )
+                })}
+            </div>         
         </div>
     )
 }
