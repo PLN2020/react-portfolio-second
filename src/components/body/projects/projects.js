@@ -21,9 +21,9 @@ function Projects({ project }) {
                                             <p>{project.details}</p>
                                             <div className="card-footer">
                                                 <div className="links">
-                                                    <a href={project.github} className="source-code" target="_blank">Source</a>
+                                                    <a href={project.github} className="source-code" target="_blank" rel="noreferrer">Source</a>
                                                     <span> / </span> 
-                                                    <a href={project.url} className="website-url" target="_blank">URL</a> 
+                                                    <a href={project.url} className="website-url" target="_blank" rel="noreferrer">URL</a> 
                                                 </div>
                                                 
                                                 <div className="icons">

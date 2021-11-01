@@ -7,7 +7,7 @@ function EducationCard({item}) {
             <div className="education-info">
                 
                 <div className="education-school-year">
-                    <h2 className="school-name">{item.school}</h2>
+                    <span className="school-name">{item.school}</span>
                     <span> / </span>
                     <span className="year">{item.dateEnd}</span>
                 </div>
