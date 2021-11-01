@@ -3,11 +3,12 @@ import { EducationData } from '../../../data/education-data'
 import { OtherSkillsData } from '../../../data/other-skills-data';
 import EducationCard from './education-card';
 import "./education.css"
+import OtherSkills from './other-skills';
 
 function Education() {
 
     const educationData = EducationData;
-    // const otherskillsData = OtherSkillsData;
+    const otherskillsData = OtherSkillsData;
 
     return (
         <div className="education">
@@ -23,6 +24,11 @@ function Education() {
 
             <div className="otherskills-container">
                 <h3>Other Skills</h3>
+                <div className="otherskills-list">
+                    {otherskillsData.map((item) => {
+                        return <OtherSkills item = {item} />
+                    })}
+                </div>
             </div>
         </div>
     )
