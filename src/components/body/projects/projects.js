@@ -8,34 +8,37 @@ function Projects({ project }) {
 
     return (
         <div className="projects">
-            <div>
-                {data.map((project)=> {
-                    return (
-                        <div className="container">
-                            <div className="row">
-                                <div className="image">
-                                    <img src={project.image} alt=""/>
-                                    <div className="details">
-                                        <h2>{project.title}</h2>
-                                        <p>{project.details}</p>
-                                        <div className="card-footer">
-                                            <div className="links">
-                                                <a href={project.github} className="source-code" target="_blank">Source / </a> 
-                                                <a href={project.url} className="website-url" target="_blank">URL</a> 
-                                            </div>
-                                            
-                                            <div className="icons">
-                                                {project.icons.map((icon) => {
-                                                    return icon
-                                                })}
+            <div className="container">
+                <div className="row">
+                    {data.map((project)=> {
+                        return (
+                            <div className="container">
+                                <div className="row">
+                                    <div className="image">
+                                        <img src={project.image} alt=""/>
+                                        <div className="details">
+                                            <h2>{project.title}</h2>
+                                            <p>{project.details}</p>
+                                            <div className="card-footer">
+                                                <div className="links">
+                                                    <a href={project.github} className="source-code" target="_blank">Source</a>
+                                                    <span> / </span> 
+                                                    <a href={project.url} className="website-url" target="_blank">URL</a> 
+                                                </div>
+                                                
+                                                <div className="icons">
+                                                    {project.icons.map((icon) => {
+                                                        return icon
+                                                    })}
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div> 
-                    )
-                })}
+                            </div> 
+                        )
+                    })}
+                </div>
             </div>         
         </div>
     )

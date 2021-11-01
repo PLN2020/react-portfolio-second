@@ -16,6 +16,9 @@
     max-width: 460px;
     height: 252px;
     margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 .image img {
@@ -28,7 +31,7 @@
 }
 
 .image:hover img {
-    opacity: 0.15;
+    opacity: 0.10;
 }
 
 .image .details {
@@ -44,14 +47,10 @@
 .image .details h2 {
     text-align: center;
     font-size: 35px;
-    /* text-transform: uppercase; */
-    font-weight: 300;
+    font-weight: 800;
     margin-top: 70px;
     transition: transform 0.6s ease;
-}
-
-.image .details h2 span {
-    font-weight: 900;
+    background-color: indigo;
 }
 
 .image:hover .details h2 {
@@ -83,27 +82,57 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    opacity: 0;
-    bottom: 0px;
-    transition: opacity 0.6s ease;
+    /* opacity: 0; */
+    bottom: -50px;
+    transition: bottom 0.6s ease;
     /* transition-delay: 0.6s; */
 }
 
 .image:hover .card-footer {
-    opacity: 1;
-    /* bottom: 0; */
+    /* opacity: 1; */
+    bottom: 0;
 }
 
-.card-footer .source-code {
-    color: #000;
+.card-footer .links a {
     text-decoration: none;
-    font-size: 20px;
+    color: #000;
+    font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
+    transition: 0.4s ease;
+    transition-property: background-color, color;
 }
 
-.card-footer .icons i{
+.card-footer .links a:hover {
+    background-color: black;
+    color: white;
+}
+
+.card-footer .links span {
+    color: indigo;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card-footer .icons i {
     color: #000;
     font-size: 35px;
     letter-spacing: 4px;
 }
+
+.card-footer .icons a:not(:last-child) i {
+    margin-right: 20px;
+}
+
+/* @media (max-width: 1080px){
+    .image{
+        flex: 100%;
+        max-width: 480px;
+    }
+}
+
+@media (max-width: 400px){
+    .image .details p{
+        font-size: 16px;
+    }
+} */
