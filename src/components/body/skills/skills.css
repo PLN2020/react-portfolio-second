@@ -1,0 +1,22 @@
+.skills {
+    background: lightblue;
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.skills .skills-card {
+    position: relative;
+    height: 250px;
+    background: #fff;
+    display: flex;
+    width: 45%;
+    margin: 30px 0;
+}
+
+.skills .skills-card .main-image {
+    
+}
