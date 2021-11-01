@@ -1,5 +1,6 @@
 import React from 'react';
 import Body from '../body/body';
+import Footer from '../footer/footer';
 import Navbar from '../navbar/navbar';
 import './home.css';
 
@@ -11,6 +12,9 @@ function Home() {
             </div>
             <div>
                 <Body />
+            </div>
+            <div>
+                <Footer />
             </div>
         </div>
     )
