@@ -50,7 +50,8 @@
     font-weight: 800;
     margin-top: 70px;
     transition: transform 0.6s ease;
-    background-color: indigo;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: indigo;
 }
 
 .image:hover .details h2 {
