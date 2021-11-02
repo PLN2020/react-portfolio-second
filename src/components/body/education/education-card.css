@@ -1,10 +1,10 @@
 .education-card {
     color: white;
-    margin: 2em;
+    margin-bottom: 2em;
 }
 
-.education-school-year {
-    margin-bottom: 0.5em;
+.education-desc {
+    margin-top: 0.5em;
 }
 
 .school-name {

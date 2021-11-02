@@ -1,6 +1,6 @@
 .otherskills-card {
     color: white;
-    margin: 2em;
+    margin-bottom: 2em;
 }
 
 .otherskills-title {
@@ -11,3 +11,6 @@
     color: indigo;
 }
 
+.otherskills-desc {
+    margin-top: 0.5em;
+}

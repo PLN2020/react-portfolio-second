@@ -12,22 +12,31 @@ function Education() {
 
     return (
         <div className="education">
-            This is the Education section
             <div className="education-container">
-                <h3>History</h3>
-                <div className="education-list">
-                    {educationData.map((item) => {
-                        return <EducationCard item = {item} />
-                    })}
-                </div>
-            </div>
+                <div className="education-row">
+                    <div className="education-column">
+                        <div className="history-column">
+                            <h3>History</h3>
+                            <div className="history-list">
+                                {educationData.map((item) => {
+                                    return <EducationCard item = {item} />
+                                })}
+                            </div>
+                        </div>
+                    </div>
 
-            <div className="otherskills-container">
-                <h3>Other Skills</h3>
-                <div className="otherskills-list">
-                    {otherskillsData.map((item) => {
-                        return <OtherSkills item = {item} />
-                    })}
+                    <div className="education-column">
+                        <div className="otherskills-column">
+                            <h3>Other Skills</h3>
+                            <div className="otherskills-list">
+                                {otherskillsData.map((item) => {
+                                    return <OtherSkills item = {item} />
+                                })}
+                            </div>
+                        </div>
+
+                    </div>  
+                        
                 </div>
             </div>
         </div>
