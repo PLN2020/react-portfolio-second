@@ -18,7 +18,7 @@ function Navbar() {
     return (
         <div className={navbar ? 'navbar active' : 'navbar'}>
             <div className="max-width">
-                <div className="logo"><a href="#about">Port<span>folio.</span></a></div>
+                <div className="logo"><a href="#about">Portfolio.</a></div>
                 <ul className="menu">
                     {/* <li><a href="#">About</a></li> */}
                     <li><a href="#skills">Skills</a></li>
