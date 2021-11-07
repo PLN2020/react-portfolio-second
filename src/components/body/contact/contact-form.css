@@ -1,0 +1,58 @@
+.contact-form {
+    width: 400px;
+    margin: 0 auto;
+    /* height: 100vh; */
+}
+
+.form {
+    /* height: 80vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input, textarea, button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.form > input,
+textarea {
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid lightgray;
+    background: #fff;
+    font-size: 16px;
+    color: rgb(0, 0, 32);
+    outline: none;
+}
+
+.form > input:focus,
+textarea:focus {
+    border: 1px solid rgb(0, 0, 196);
+}
+
+.form > label {
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.form > button {
+    padding: 20px;
+    border: none;
+    background-color: rbg(2, 2, 110);
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 4px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.form > button:hover {
+    background-color: indigo;
+    color: white;
+}

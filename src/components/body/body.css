@@ -3,3 +3,8 @@
     /* background: #313542; */
     background: #0E1117;
 }
+
+.body h1 {
+    color: white;
+    text-align: center;
+}

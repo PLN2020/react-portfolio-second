@@ -12,6 +12,7 @@
     height: 100vh;
     color: white;
     min-height: 500px;
+    margin-bottom: 6em;
 }
 
 .about .max-width {
