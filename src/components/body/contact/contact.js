@@ -4,7 +4,15 @@ import "./contact.css"
 
 function Contact() {
     return (
-        <div><ContactForm /></div>
+        <div className="contact">
+            <div className="contact-card">
+
+            </div>
+            <div className="contact-form">
+                <ContactForm />
+            </div>
+            
+        </div>
     )
 }
 

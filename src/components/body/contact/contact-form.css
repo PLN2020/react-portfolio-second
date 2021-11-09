@@ -49,7 +49,7 @@ textarea:focus {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .form > button:hover {
