@@ -1,11 +1,11 @@
 .body {
     /* background: #1C1C1C; */
     /* background: #313542; */
-    background: #0E1117;
+    background: #FBFAF8;
 }
 
 .body h1 {
-    color: white;
+    color: indigo;
     text-align: center;
     font-size: 40px;
     margin-bottom: 40px;
