@@ -60,7 +60,7 @@
 
 .skills-card > .list-wrapper {
     padding: 0.8em;
-    background-color: white;
+    /* background-color: white; */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -71,7 +71,9 @@
 .skills-list {
     color: black;
     list-style-type: none;
-    font-size: 18px;
+    font-size: 20px;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 .skill-icon {
