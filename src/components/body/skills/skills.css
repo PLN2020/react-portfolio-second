@@ -79,3 +79,9 @@
 .skill-icon {
     margin-right: 2px;
 }
+
+@media (min-width: 100px) and (max-width: 991px) {
+    .skills {
+      grid-template-columns: 1fr;
+    }
+  }
